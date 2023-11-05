@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter mb-16">
+    <footer className="flexCenter py-16">
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
@@ -47,7 +47,7 @@ const Footer = () => {
                 <ul className="regular-14 flex gap-4 text-gray-30">
                   {SOCIALS.links.map((link) => (
                     <Link href="/" key={link}>
-                      <Image src={link} alt="logo" width={24} height={24} />
+                      <Image src={link} alt="logo" width={24} height={24} className="text-white" />
                     </Link>
                   ))}
                 </ul>
